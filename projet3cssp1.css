@@ -1,0 +1,19 @@
+body
+{  
+    margin:0;
+}
+h1
+{ 
+    color: yellow;
+    font-size: 3em;
+    text-align: center;
+}
+.ohmyfood
+{   
+    background: green;
+    padding: 20px 0 20px 0;
+}
+.menu1accueil
+{  
+    background: url("menu1accueil.png");
+}
