@@ -60,7 +60,7 @@ font-size: 1.7em;
 .menu1accueil, .menu3accueil{  
     margin-bottom: 100px;
     margin-top: 30px;
-    background: rgb(252, 209, 131);
+   background: wheat;
     opacity: 0.8;
 }
 .menu2accueil,.menu4accueil{
