@@ -1,8 +1,115 @@
-$coulor :red;
-.menu1accueil{
-    background: $couleur;
+@mixin menu-style(){
+    border: 2px solid brown;
+    width:280px;
+    height:150px;
+    text-align: center;
+    padding: 135px 0 135px 0;
+    font-size:1.6em ;
+    
+}
+$coleurfoothead: rgb(84, 133, 84);
+
+@mixin divheadermixin{
+    background: $coleurfoothead ;
+    padding: 1px 0 20px 0;
+    height: 100px;
+    width: auto;
+}
+@mixin footermixin {
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+@mixin pieddepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px 0 25px 0;
+    font-size: 1.5em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: $coleurfoothead;
 }
 
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body
+{  
+    margin:0;
 }
+h1
+{ 
+    color: yellow;
+    font-size: 3em;
+    text-align: center;
+}
+
+.divheader
+
+{   
+    @include divheadermixin;
+    } 
+    
+
+
+.menu{  
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+      &__1accueil{
+    @include menu-style();
+     background: rgb(228, 151, 132);
+     margin-bottom: 100px;
+     margin-top: 30px;
+     
+    }
+    &__2accueil{
+        @include menu-style;
+        margin-bottom: 30px;
+      
+        
+    }
+    &__3accueil{
+        @include menu-style;
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
+    &__4accueil{
+        @include menu-style;
+        margin-bottom: 30px;
+    }
+  
+  }
+  .prochainement{ 
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 135px;
+    border: solid $coleurfoothead 1px;
+    border-radius: 5%;
+    background: $coleurfoothead;
+    width: 210px;
+    margin-left: 525px;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.footer{
+    @include footermixin();
+
+}
+.pieddepage{
+    @include pieddepage();
+}
+
+  .mentionlegal{
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+  }   
+  .contact{ 
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+  }

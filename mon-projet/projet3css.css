@@ -4,7 +4,7 @@ body
    
     
 }
-.toutelapage{ 
+
     
  
 }
@@ -23,7 +23,7 @@ h1
     width: auto;
     
 }
-.menuaccueil {  
+.menu {  
    
    display: flex;
    flex-direction: row;
