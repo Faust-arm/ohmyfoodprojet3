@@ -1,5 +1,5 @@
 @mixin menu-style(){
-    border: 2px solid brown;
+    border: 2px solid  rgb(209, 204, 204);
     width:280px;
     height:150px;
     text-align: center;
@@ -13,7 +13,8 @@ $coleurfoothead: rgb(84, 133, 84);
     background: $coleurfoothead ;
     padding: 1px 0 20px 0;
     height: 100px;
-    width: auto;
+    width: 100%;
+    
 }
 @mixin footermixin {
     
@@ -21,6 +22,7 @@ $coleurfoothead: rgb(84, 133, 84);
     bottom: 0;
     width: 100%;
     height: 70px;
+    margin-to: 50px;
 }
 @mixin pieddepage {
     display: flex;
@@ -37,6 +39,7 @@ $coleurfoothead: rgb(84, 133, 84);
 body
 {  
     margin:0;
+    height: auto;
 }
 h1
 { 
@@ -58,17 +61,18 @@ h1
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 
       &__1accueil{
     @include menu-style();
-     background: rgb(228, 151, 132);
+     background: rgb(245, 205, 193);
      margin-bottom: 100px;
      margin-top: 30px;
      
     }
     &__2accueil{
         @include menu-style;
-        margin-bottom: 30px;
+        margin-bottoM: 30px;
       
         
     }
@@ -81,19 +85,26 @@ h1
         @include menu-style;
         margin-bottom: 30px;
     }
-  
+}
+  .div-prochainement{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 120px;
+     
   }
+  
   .prochainement{ 
     text-align: center;
     font-size: 1.7em;
-    margin-bottom: 135px;
+    
     border: solid $coleurfoothead 1px;
     border-radius: 5%;
     background: $coleurfoothead;
-    width: 210px;
-    margin-left: 525px;
+    width: 250px;
     color: yellow;
     font-family: Arial, Helvetica, sans-serif;
+    
   
 }
 
@@ -113,3 +124,39 @@ h1
     color: yellow;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
+  @media all and (max-width: 650px) {
+    .menu{ 
+        width: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     
+   
+        .menu__1accueil{
+            width: 320px
+        }
+        .menu__2accueil{
+            width: 320px;
+        }
+        .menu__3accueil{
+            width: 320px;
+        }
+        .menu__4accueil{
+            width: 320px;
+        }
+    }
+    @media all and (max-width: 390px){
+        .pieddepage{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn-contacternous{
+            margin-bottom: 10px;
+        }
+    }
+    
+     
