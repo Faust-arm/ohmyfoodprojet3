@@ -7,13 +7,25 @@
     font-size:1.6em ;
     
 }
-$coleurfoothead: rgb(84, 133, 84);
+
+@mixin anime-proch{
+    border:solid $colortext 1px;
+    background: $colortext;
+    border-radius: 100%;
+    width:5px;
+    height:5px;
+    transform: scale();
+    transition: 2s;
+}
+$colortext:rgb(248, 194, 16);
+$coleurfoothead: rgb(36, 124, 80);
 
 @mixin divheadermixin{
     background: $coleurfoothead ;
     padding: 1px 0 20px 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
+    
     
 }
 @mixin footermixin {
@@ -21,19 +33,26 @@ $coleurfoothead: rgb(84, 133, 84);
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 70px;
-    margin-to: 50px;
+   
+    
 }
 @mixin pieddepage {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 25px 0 25px 0;
+    padding: 20px 0 20px 0;
     font-size: 1.5em;
     width: 100%;
     position: fixed;
     bottom: 0;
     background: $coleurfoothead;
+}
+
+@keyframes point-mixin{
+    
+    to{
+         transform: scale(0);
+    }
 }
 
 body
@@ -43,9 +62,15 @@ body
 }
 h1
 { 
-    color: yellow;
+    color: $colortext;
     font-size: 3em;
     text-align: center;
+    
+}
+.div-ohmyfood{
+    margin-bottom: 25px;
+    
+    
 }
 
 .divheader
@@ -86,28 +111,61 @@ h1
         margin-bottom: 30px;
     }
 }
-  .div-prochainement{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 120px;
-     
-  }
-  
-  .prochainement{ 
-    text-align: center;
-    font-size: 1.7em;
-    
-    border: solid $coleurfoothead 1px;
-    border-radius: 5%;
-    background: $coleurfoothead;
-    width: 250px;
-    color: yellow;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  
-}
 
+
+    .big-div-box{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        } 
+  .div-prochainement{
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-evenly;
+      background:$coleurfoothead ;
+      margin-bottom: 120px;
+      width:270px;
+      height: 40px;
+      
+      border: solid 2px $coleurfoothead;
+        border-radius: 5%;
+    }
+    
+
+    
+  
+  
+  .box{ 
+    text-align: center;
+    padding-top: 4px;
+    font-size: 1.7em;
+    color: $colortext;
+    font-family: Arial, Helvetica, sans-serif;
+
+ 
+ 
+    &__1{
+    @include anime-proch;
+    animation: point-mixin 1s infinite;
+    transition: animation 1s;
+    }
+    
+    &__2{
+        @include anime-proch;
+        animation: point-mixin 2s infinite;
+        transition: animation 2s;
+    }
+    
+&__3{
+    @include anime-proch;
+    animation: point-mixin 3s  infinite;
+    transition: animation 3;
+}
+  }
+    
+    
+    
 .footer{
     @include footermixin();
 
@@ -116,14 +174,33 @@ h1
     @include pieddepage();
 }
 
+@keyframes wiggle{
+    0%{
+        transform:rotate(0deg) ;
+    }
+    4%{transform: rotate(-4deg);}
+    10%{transform: rotate(4deg);}
+    100%{transform: rotate(0deg);}
+}
+
   .mentionlegal{
-    color: yellow;
+    color: $colortext;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
   }   
-  .contact{ 
-    color: yellow;
-    font-family: Arial, Helvetica, sans-serif;
+  .btn-mentionlegal:hover{
+    animation: wiggle 1s infinite ;
+    text-decoration:none;
   }
+  .contact{ 
+    color: $colortext;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+ }
+ .btn-contacternous:hover{
+    animation: wiggle 1s infinite;
+    text-decoration:none;
+ }
 
 
   @media all and (max-width: 650px) {
@@ -147,6 +224,11 @@ h1
         .menu__4accueil{
             width: 320px;
         }
+       
+    }
+    .note{
+        color: rgb(243, 178, 57);
+        font-size: 1.7em;
     }
     @media all and (max-width: 390px){
         .pieddepage{ 

@@ -47,6 +47,9 @@ font-size: 1.7em;
     color:purple;
     font-size: 1.7em;
 }
+h1{
+    transform: rotateZ(-7deg);
+}
 
 .menu1accueil, .menu2accueil, .menu3accueil, .menu4accueil{  
     border: 2px solid brown;
