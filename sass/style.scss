@@ -48,14 +48,6 @@ $coleurfoothead: rgb(36, 124, 80);
     background: $coleurfoothead;
 }
 
-@keyframes point-mixin{
-    
-    0%{
-        transform: scale(0);}
-    50%{transform: scale(1);}    
-    80%{transform: scale(2);}
-    100%{transform: scale(0);}
-}
 
 body
 {  
@@ -79,20 +71,20 @@ h1
 
 {   
     @include divheadermixin;
-    } 
-    
+} 
+
 
 
 .menu{  
-   
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
 
-      &__1accueil{
+    &__1accueil{
     @include menu-style();
-     background: rgb(245, 205, 193);
+    background: rgb(245, 205, 193);
      margin-bottom: 100px;
      margin-top: 30px;
      
@@ -107,12 +99,12 @@ h1
         background-image: linear-gradient(to right, rgb(104, 75, 233), rgb(118, 181, 221) );
         color:transparent;
         background-clip: text;
-      }
-
+    }
+    
       &__2accueil:hover{
         transform: scale(1.4);
           }
-
+          
     &__3accueil{
         @include menu-style;
         margin-bottom: 100px;
@@ -133,16 +125,16 @@ h1
     }
     &__4accueil:hover{
         transform: scale(1.4);
-     }
+    }
 }
 
-    .big-div-box{
-        width:100%;
+.big-div-box{
+    width:100%;
         display: flex;
         justify-content: center;
         ;
         } 
-  .div-prochainement{
+        .div-prochainement{
       display: flex;
       flex-direction: row;;
       align-items: baseline;;
@@ -153,38 +145,47 @@ h1
       height: 40px;
       
       border: solid 2px $coleurfoothead;
-        border-radius: 5%;
+      border-radius: 5%;
     }
     
-
     
-  
-  
-  .box{ 
-    text-align: center;
-    padding-top: 4px;
-    font-size: 1.7em;
-    color: $colortext;
-    font-family: Arial, Helvetica, sans-serif;
-
- 
- 
-    &__1{
-    @include anime-proch;
-    animation: point-mixin 3s infinite;
-    transition: animation 4s ;
+    
+    
+    @keyframes point-mixin{
+        
+        0%{
+            transform: scale(0);}
+        50%{transform: scale(1);}    
+        80%{transform: scale(2);}
+        100%{transform: scale(0);}
     }
     
-    &__2{
-        @include anime-proch;
-        animation: point-mixin 2s infinite;
-        transition: animation 3s;
+    .box{ 
+        text-align: center;
+        padding-top: 4px;
+        font-size: 1.7em;
+        color: $colortext;
+        font-family: Arial, Helvetica, sans-serif;
+
+        
+        
+        
+        &__1{
+            @include anime-proch;
+            animation: 3s point-mixin  infinite;
+           
+        }
+        
+        &__2{
+            @include anime-proch;
+            animation:3s point-mixin 1s infinite;
+            
     }
     
 &__3{
     @include anime-proch;
-    animation: point-mixin 1s  infinite;
-    transition: animation 2s ;
+    animation: 3s point-mixin 2s  infinite;
+    
 }
   }
     
