@@ -50,9 +50,11 @@ $coleurfoothead: rgb(36, 124, 80);
 
 @keyframes point-mixin{
     
-    to{
-         transform: scale(0);
-    }
+    0%{
+        transform: scale(0);}
+    50%{transform: scale(1);}    
+    80%{transform: scale(2);}
+    100%{transform: scale(0);}
 }
 
 body
@@ -95,33 +97,55 @@ h1
      margin-top: 30px;
      
     }
+    &__1accueil:hover{
+        transform: scale(1.4);
+    }
+
     &__2accueil{
         @include menu-style;
         margin-bottoM: 30px;
-      
-        
-    }
+        background-image: linear-gradient(to right, rgb(104, 75, 233), rgb(118, 181, 221) );
+        color:transparent;
+        background-clip: text;
+      }
+
+      &__2accueil:hover{
+        transform: scale(1.4);
+          }
+
     &__3accueil{
         @include menu-style;
         margin-bottom: 100px;
         margin-top: 30px;
+        background-image: linear-gradient(to right, orange, purple );
+        color:transparent;
+        background-clip: text;
     }
+    &__3accueil:hover{
+        transform: scale(1.4);
+          }
     &__4accueil{
         @include menu-style;
         margin-bottom: 30px;
+        background-image: linear-gradient(to right, rgb(82, 175, 20), rgb(188, 231, 118) );
+        colo:transparent;
+        background-cli: text;
     }
+    &__4accueil:hover{
+        transform: scale(1.4);
+     }
 }
-
 
     .big-div-box{
         width:100%;
         display: flex;
         justify-content: center;
+        ;
         } 
   .div-prochainement{
       display: flex;
-      flex-direction: row;
-      align-items: baseline;
+      flex-direction: row;;
+      align-items: baseline;;
       justify-content: space-evenly;
       background:$coleurfoothead ;
       margin-bottom: 120px;
@@ -147,20 +171,20 @@ h1
  
     &__1{
     @include anime-proch;
-    animation: point-mixin 1s infinite;
-    transition: animation 1s;
+    animation: point-mixin 3s infinite;
+    transition: animation 4s ;
     }
     
     &__2{
         @include anime-proch;
         animation: point-mixin 2s infinite;
-        transition: animation 2s;
+        transition: animation 3s;
     }
     
 &__3{
     @include anime-proch;
-    animation: point-mixin 3s  infinite;
-    transition: animation 3s;
+    animation: point-mixin 1s  infinite;
+    transition: animation 2s ;
 }
   }
     
@@ -241,4 +265,11 @@ h1
         }
     }
     
+
+
+    .container-menu1{
+        text-align: center;
+        border: solid 2px black;
+        color:red;
+    }
      
