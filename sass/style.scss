@@ -19,6 +19,8 @@
 }
 $colortext:rgb(248, 194, 16);
 $coleurfoothead: rgb(36, 124, 80);
+$colorligne:rgba(214, 142, 7, 0.5);
+
 
 @mixin divheadermixin{
     background: $coleurfoothead ;
@@ -47,6 +49,31 @@ $coleurfoothead: rgb(36, 124, 80);
     bottom: 0;
     background: $coleurfoothead;
 }
+
+@mixin titremenu($colorligne:rgba(214, 142, 7, 0.5)){
+    width:240px;
+    
+    text-decoration: none;
+    background:linear-gradient(to top, $colorligne
+     , $colorligne 4px, transparent 10%)
+      no-repeat left bottom;
+      background-size: 0% 100%;
+      transition:background-size 2s;
+      
+    
+    &:hover{
+        background-size: 100% 100%;
+        
+    }
+}
+
+@mixin tiret($tiretmenu:purple){
+    width:140px;
+    height:0;
+    border: solid $tiretmenu;
+    text-align:center;
+    margin-top: 35px;
+  }
 
 
 body
@@ -120,8 +147,7 @@ h1
         @include menu-style;
         margin-bottom: 30px;
         background-image: linear-gradient(to right, rgb(82, 175, 20), rgb(188, 231, 118) );
-        colo:transparent;
-        background-cli: text;
+        
     }
     &__4accueil:hover{
         transform: scale(1.4);
@@ -270,7 +296,97 @@ h1
 
     .container-menu1{
         text-align: center;
-        border: solid 2px black;
-        color:red;
+        
+        width:500px;
+        height:550px;
+        margin-bottom: 100px;
     }
+    
+    
+    .titre-menu2{
+       
+        margin-bottom: 35px;
+        margin-top: 25px;
+        font-size: 2em;
+        background-image: linear-gradient(to right, orange, purple );
+        color:transparent;
+        background-clip: text;
+    }
+.tirettitre{
+   
+    display: flex;
+    flex-direction: row;
+}
+
+.container-menu1{ 
+    border:solid wheat 2px;
+    height:130Opx;
+}
+
+.divsection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:auto;
+    margin-bottom:130px;
+    
+   
+    
+}
+
+
+.tiret{
+    @include tiret()
+}
+.tiret1{@include tiret(rgb(214, 142, 7)) }
+
+.tiret2{@include tiret(rgb(107, 21, 245))}
+
+.tiret3{@include tiret(rgb(48, 46, 46))}
+
+    .div__entre{
+        font-size: 1.4em;
+        color:rgb(214, 142, 7);
+        margin-top:20px;
+       @include titremenu(rgb(214, 142, 7))
+ }
+
+.titremenu1{
+    font-size: 1.4em;
+    color:rgb(48, 46, 46);
+    margin-top:20px;
+    
+    @include titremenu(rgb(48, 46, 46))
+    
+}
+
+ .div__plat{
+    font-size: 1.4em;
+    color:purple;
+    margin-top:20px;
+    
+    @include titremenu(purple)
+ }
+
+ .div__desert{
+    font-size: 1.4em;
+    color: rgb(107, 21, 245);
+    margin-top:20px;
+    @include titremenu(rgb(107, 21, 245))
+ }
+
+ .text{
+     
+     width:500px;
+     text-align:justify;
+     
+     font-size: 1.1em;;
+ }
+ .textentre{
+display: flex;
+justify-content: space-between;
+margin-top: 25px;
+ } 
+        
+
      
