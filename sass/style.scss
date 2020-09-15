@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Serif+Text&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Serif+Text&family=Dancing+Script&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Serif+Text&family=Dancing+Script&family=Itim&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Serif+Text&family=Dancing+Script&family=Itim&family=Kaushan+Script&family=Nanum+Pen+Script&display=swap');
+
 @mixin menu-style(){
     border: 2px solid  rgb(209, 204, 204);
     width:280px;
@@ -5,7 +13,7 @@
     text-align: center;
     padding: 135px 0 135px 0;
     font-size:1.6em ;
-    
+   
 }
 
 @mixin anime-proch{
@@ -14,13 +22,12 @@
     border-radius: 100%;
     width:5px;
     height:5px;
-    transform: scale();
-    transition: 2s;
+    transfor: scale();
+    
 }
 $colortext:rgb(248, 194, 16);
 $coleurfoothead: rgb(36, 124, 80);
 $colorligne:rgba(214, 142, 7, 0.5);
-
 
 @mixin divheadermixin{
     background: $coleurfoothead ;
@@ -35,7 +42,7 @@ $colorligne:rgba(214, 142, 7, 0.5);
     position: fixed;
     bottom: 0;
     width: 100%;
-   
+    
     
 }
 @mixin pieddepage {
@@ -52,28 +59,26 @@ $colorligne:rgba(214, 142, 7, 0.5);
 
 @mixin titremenu($colorligne:rgba(214, 142, 7, 0.5)){
     width:240px;
-    
+    text-align: center;
     text-decoration: none;
     background:linear-gradient(to top, $colorligne
-     , $colorligne 4px, transparent 10%)
+    , $colorligne 4px, transparent 10%)
       no-repeat left bottom;
       background-size: 0% 100%;
       transition:background-size 2s;
       
     
-    &:hover{
-        background-size: 100% 100%;
+      &:hover{
+          background-size: 100% 100%;
         
-    }
+        }
+}
+@mixin barremenu3{
+    font-size: 1.4em;
+    color:rgb(48, 46, 46);
+    margin-top:20px;
 }
 
-@mixin tiret($tiretmenu:purple){
-    width:140px;
-    height:0;
-    border: solid $tiretmenu;
-    text-align:center;
-    margin-top: 35px;
-  }
 
 
 body
@@ -81,6 +86,8 @@ body
     margin:0;
     height: auto;
 }
+section{height:710px;}
+
 h1
 { 
     color: $colortext;
@@ -108,29 +115,28 @@ h1
     flex-direction: row;
     justify-content: space-around;
     
-
+    
     &__1accueil{
-    @include menu-style();
-    background: rgb(245, 205, 193);
-     margin-bottom: 100px;
-     margin-top: 30px;
-     
-    }
-    &__1accueil:hover{
-        transform: scale(1.4);
-    }
+        @include menu-style();
+        background: rgb(245, 205, 193);
+    margin-bottom: 100px;
+    margin-top: 30px;
+    font-family: 'devonshire';
+}
+&__1accueil p:hover{transform: scale(1.3);}
+    
 
-    &__2accueil{
-        @include menu-style;
+&__2accueil{
+    @include menu-style;
         margin-bottoM: 30px;
         background-image: linear-gradient(to right, rgb(104, 75, 233), rgb(118, 181, 221) );
         color:transparent;
         background-clip: text;
+        font-family: "Dancing Script";
     }
     
-      &__2accueil:hover{
-        transform: scale(1.4);
-          }
+    &__2accueil p:hover{transform: scale(1.3);}
+    
           
     &__3accueil{
         @include menu-style;
@@ -139,28 +145,32 @@ h1
         background-image: linear-gradient(to right, orange, purple );
         color:transparent;
         background-clip: text;
+        font-family: "croissant one";
     }
-    &__3accueil:hover{
-        transform: scale(1.4);
-          }
+    &__3accueil  p:hover{transform: scale(1.3);}
+          
     &__4accueil{
         @include menu-style;
         margin-bottom: 30px;
         background-image: linear-gradient(to right, rgb(82, 175, 20), rgb(188, 231, 118) );
-        
+        color:transparent;
+        background-clip: text;
+        font-family: "kaushan script";
     }
-    &__4accueil:hover{
-        transform: scale(1.4);
-    }
+    &__4accueil p:hover{transform: scale(1.3);}
+    
 }
-
+.menu1{font-family: "itim"; font-size:1.7em; color: black;}
+.menu2{font-size:1.7em; font-family:'Dm serif text' ;}
+.menu3, .menu4{font-size:2.3em; font-family: "nanum pen script" ;}
 .big-div-box{
     width:100%;
-        display: flex;
-        justify-content: center;
-        ;
-        } 
-        .div-prochainement{
+    display: flex;
+    justify-content: center;
+    
+} 
+.text1{font-family: "itim";}
+.div-prochainement{
       display: flex;
       flex-direction: row;;
       align-items: baseline;;
@@ -180,10 +190,10 @@ h1
     @keyframes point-mixin{
         
         0%{
-            transform: scale(0);}
-        50%{transform: scale(1);}    
-        80%{transform: scale(2);}
-        100%{transform: scale(0);}
+            transform: scale(1);}
+        50%{transform: scale(0);}    
+        80%{transform: scale(1);}
+        100%{transform: scale(1);}
     }
     
     .box{ 
@@ -192,36 +202,36 @@ h1
         font-size: 1.7em;
         color: $colortext;
         font-family: Arial, Helvetica, sans-serif;
-
+        
         
         
         
         &__1{
             @include anime-proch;
-            animation: 3s point-mixin  infinite;
-           
+            animation: 3s point-mixin 1s  infinite;
+            
         }
         
         &__2{
             @include anime-proch;
-            animation:3s point-mixin 1s infinite;
+            animation:3s point-mixin 2s infinite;
             
-    }
-    
-&__3{
-    @include anime-proch;
-    animation: 3s point-mixin 2s  infinite;
-    
+        }
+        
+    &__3{
+        @include anime-proch;
+        animation: 3s point-mixin 3s  infinite;
+        
 }
-  }
-    
-    
-    
-.footer{
-    @include footermixin();
+}
 
-}
-.pieddepage{
+    
+
+  .footer{
+      @include footermixin();
+      
+    }
+    .pieddepage{
     @include pieddepage();
 }
 
@@ -234,12 +244,12 @@ h1
     100%{transform: rotate(0deg);}
 }
 
-  .mentionlegal{
+.mentionlegal{
     color: $colortext;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration:none;
-  }   
-  .btn-mentionlegal:hover{
+}   
+.btn-mentionlegal:hover{
     animation: wiggle 1s infinite ;
     text-decoration:none;
   }
@@ -247,26 +257,26 @@ h1
     color: $colortext;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration:none;
- }
- .btn-contacternous:hover{
+}
+.btn-contacternous:hover{
     animation: wiggle 1s infinite;
     text-decoration:none;
- }
+}
 
 
   @media all and (max-width: 650px) {
-    .menu{ 
-        width: auto;
+      .menu{ 
+          width: auto;
         display:flex;
         flex-direction: column;
         align-items: center;
     }
-     
-   
-        .menu__1accueil{
-            width: 320px
-        }
-        .menu__2accueil{
+    
+    
+    .menu__1accueil{
+        width: 320px
+    }
+    .menu__2accueil{
             width: 320px;
         }
         .menu__3accueil{
@@ -275,7 +285,7 @@ h1
         .menu__4accueil{
             width: 320px;
         }
-       
+        
     }
     .note{
         color: rgb(243, 178, 57);
@@ -292,8 +302,8 @@ h1
         }
     }
     
-
-
+    
+    
     .container-menu1{
         text-align: center;
         
@@ -303,52 +313,80 @@ h1
     }
     
     
+    
     .titre-menu2{
-       
+        padding-top: 40px;
         margin-bottom: 35px;
         margin-top: 25px;
         font-size: 2em;
         background-image: linear-gradient(to right, orange, purple );
         color:transparent;
         background-clip: text;
+        font-family: "croissant one";
     }
-.tirettitre{
-   
-    display: flex;
-    flex-direction: row;
-}
+    .titremenu1{font-family: "itim";}
 
-.container-menu1{ 
-    border:solid wheat 2px;
-    height:130Opx;
-}
-
+    .tirettitre{
+        font-family: "dm serif text";
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .container-menu1{ 
+        
+        height:130Opx;
+    }
+    
 .divsection2{
     display: flex;
     flex-direction: column;
     align-items: center;
     width:auto;
     margin-bottom:130px;
+    height:800px;
     
-   
     
 }
+.prix{ margin-left: 8px;}
 
+
+@mixin tiret($colortiret1, $colortiret2){
+    width:140px;
+    height:5px;
+    background-image: linear-gradient(to right, $colortiret1, $colortiret2 );
+    text-align:center;
+    margin-top: 35px;
+}
 
 .tiret{
-    @include tiret()
+    @include tiret(#52af14, #bce776)
 }
-.tiret1{@include tiret(rgb(214, 142, 7)) }
+.tiret1menu2{@include tiret(rgb(221, 76, 9), rgb(221, 76, 9)) }
 
-.tiret2{@include tiret(rgb(107, 21, 245))}
+.tiret2menu2{
+    @include tiret(rgb(156, 7, 194), rgb(156, 7, 194))
+}
+.tiret3menu2{
+    @include tiret(#6b15f5, #6b15f5)
+}
+.tiret3{@include tiret(black, black) }
 
-.tiret3{@include tiret(rgb(48, 46, 46))}
+.tiret1menu3{@include tiret(rgb(15, 39, 146), rgb(15, 39, 146))}
+
+.tiret2menu3{@include tiret(rgb(0, 110, 255), rgb(0, 110, 255))}
+
+.tiret3menu3{@include tiret(rgb(0, 238, 255), rgb(0, 238, 255))}
+
+
+
+
 
     .div__entre{
         font-size: 1.4em;
         color:rgb(214, 142, 7);
         margin-top:20px;
-       @include titremenu(rgb(214, 142, 7))
+       @include titremenu(rgb(214, 142, 7));
  }
 
 .titremenu1{
@@ -356,37 +394,148 @@ h1
     color:rgb(48, 46, 46);
     margin-top:20px;
     
-    @include titremenu(rgb(48, 46, 46))
+    @include titremenu(rgb(48, 46, 46));
     
 }
+.titre1menu3{
+    @include barremenu3;
+    
+    @include titremenu(rgb(15, 39, 146));
+ }
+ .titre2menu3{
+    @include barremenu3;
+    
+    @include titremenu(rgb(0, 110, 255));
+ }
+ .titre3menu3{
+    @include barremenu3;
+    
+    @include titremenu(rgb(0, 238, 255));
+ }
+
 
  .div__plat{
     font-size: 1.4em;
     color:purple;
     margin-top:20px;
     
-    @include titremenu(purple)
+    @include titremenu(purple);
  }
 
  .div__desert{
     font-size: 1.4em;
     color: rgb(107, 21, 245);
     margin-top:20px;
-    @include titremenu(rgb(107, 21, 245))
+    @include titremenu(rgb(107, 21, 245));
  }
 
- .text{
+ .text, .textplat2, .textentre2, .textdesert2{
      
      width:500px;
      text-align:justify;
-     
-     font-size: 1.1em;;
+     font-family: "dm serif text" ;
+     font-size: 1em;
  }
+ .textentre2{
+     color:rgb(214, 142, 7);
+ }
+ .textplat2{
+     color:purple;
+ }
+ .textdesert2{
+     color:blue;
+ }
+.toutelapage{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+footer{
+    width: 100%;
+}
+
  .textentre{
 display: flex;
 justify-content: space-between;
 margin-top: 25px;
  } 
         
+.note2{
+    background-image: linear-gradient(to right, red, orange);
+    color:transparent;
+    background-clip: text;
+    font-size: 3em;
+    
+}
+.titre2{
+    font-size:2em;
+    font-family: "devonshire";
+    color:rgb(49, 3, 3);
+}
 
-     
+.divtitre4{
+    font-size:2.2em;
+    font-family: "kaushan script";
+    background-image: linear-gradient(to right, rgb(82, 175, 20), rgb(188, 231, 118));
+    color:transparent;
+    background-clip: text;
+    padding-top: 35px;
+padding-bottom: 10px;
+}
+.divtitre3{
+    font-size:2.2em;
+    font-family:"Dancing Script";
+    background-image: linear-gradient(to right, rgb(108, 132, 240), rgb(17, 56, 185));
+    color:transparent;
+    background-clip: text;
+    padding-top: 35px;
+padding-bottom: 10px;
+}
+.divsection2{
+    background:rgb(245, 205, 193) ;
+    margin-top: 35px;
+    width:550px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.divsection4{ margin-top: 35px;
+   margin-bottom: 200px;
+    width:550px;
+    padding-left: 30px;
+    padding-right: 30px;}
+
+    .divsection3{
+        background:rgb(243, 241, 241);
+        margin-top: 35px;
+        width:550px;
+        padding-left: 45px;
+        margin-bottom: 100px;
+    }
+    
+
+.titre-note2{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+.titre-header{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.note-header{
+    background-image: linear-gradient(to right, red, orange);
+    color:transparent;
+    background-clip: text;
+    font-size: 2em;
+    margin-right: 15px;
+}
+.titre-header2{font-size:1.4em;font-family: "devonshire";}
+
+.mentionlegalpage{padding: 30px 30px 30px 30px; margin-bottom: 100px;}
