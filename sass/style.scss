@@ -360,23 +360,23 @@ h1
 }
 
 .tiret{
-    @include tiret(#52af14, #bce776)
+    @include tiret(#52af14, #bce776);
 }
-.tiret1menu2{@include tiret(rgb(221, 76, 9), rgb(221, 76, 9)) }
+.tiret1menu2{@include tiret(rgb(221, 76, 9), rgb(221, 76, 9)); }
 
 .tiret2menu2{
-    @include tiret(rgb(156, 7, 194), rgb(156, 7, 194))
+    @include tiret(rgb(156, 7, 194), rgb(156, 7, 194));
 }
 .tiret3menu2{
-    @include tiret(#6b15f5, #6b15f5)
+    @include tiret(#6b15f5, #6b15f5);
 }
-.tiret3{@include tiret(black, black) }
+.tiret3{@include tiret(black, black); }
 
-.tiret1menu3{@include tiret(rgb(15, 39, 146), rgb(15, 39, 146))}
+.tiret1menu3{@include tiret(rgb(15, 39, 146), rgb(15, 39, 146));}
 
-.tiret2menu3{@include tiret(rgb(0, 110, 255), rgb(0, 110, 255))}
+.tiret2menu3{@include tiret(rgb(0, 110, 255), rgb(0, 110, 255));}
 
-.tiret3menu3{@include tiret(rgb(0, 238, 255), rgb(0, 238, 255))}
+.tiret3menu3{@include tiret(rgb(0, 238, 255), rgb(0, 238, 255));}
 
 
 
@@ -397,6 +397,16 @@ h1
     @include titremenu(rgb(48, 46, 46));
     
 }
+.titremenu4{
+    font-size: 1.4em;
+    color:rgb(8, 17, 4);
+    margin-top:20px;
+    
+    @include titremenu(rgb(74, 214, 10));
+    
+
+}
+
 .titre1menu3{
     @include barremenu3;
     
@@ -501,7 +511,7 @@ padding-bottom: 10px;
 }
 .divsection4{ margin-top: 35px;
    margin-bottom: 200px;
-    width:550px;
+   
     padding-left: 30px;
     padding-right: 30px;}
 
@@ -539,3 +549,27 @@ padding-bottom: 10px;
 .titre-header2{font-size:1.4em;font-family: "devonshire";}
 
 .mentionlegalpage{padding: 30px 30px 30px 30px; margin-bottom: 100px;}
+
+
+@media all and (max-width: 550px){
+    .text, .textplat2, .textentre2, .textdesert2{
+     
+        width:320px;
+        text-align:justify;
+        font-family: "dm serif text" ;
+        font-size: 1em;
+    }
+    .container-menu1, .container-menu{
+        width: 320px;
+        height:auto;
+        margin-bottom: 180px;
+    }
+    .tiret3{width: 40px;}
+    
+    
+       .divsection3,.divsection4, .divsection2{
+           width: auto;
+           padding: 0;
+           height:950px;
+       }
+}
