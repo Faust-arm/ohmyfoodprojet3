@@ -1,0 +1,57 @@
+@media all and (max-width: 650px) {
+    .menu{ 
+        width: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+                            .menu__1accueil{
+                                width: 320px
+                            }
+                            .menu__2accueil{
+                                    width: 320px;
+                                }
+                                .menu__3accueil{
+                                    width: 320px;
+                                }
+                                .menu__4accueil{
+                                    width: 320px;
+                                }
+                                
+                            }
+
+@media all and (max-width: 390px){
+    .pieddepage{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-contacternous{
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 550px){
+    .text, .textplat2, .textentre2, .textdesert2{
+     
+        width:320px;
+        text-align:justify;
+        
+        font-size: 1em;
+    }
+    .container-menu1, .container-menu{
+        width: 320px;
+        height:auto;
+        margin-bottom: 180px;
+    }
+    .tiret3{width: 40px;}
+    
+    
+       .divsection3,.divsection4, .divsection2{
+           width: auto;
+           padding: 0;
+           height:950px;
+       }
+       section{ padding-left:10px;
+            padding-right: 10px;}
+}

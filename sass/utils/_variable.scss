@@ -1,2 +1,102 @@
+@mixin menu-style(){
+    border: 2px solid  rgb(209, 204, 204);
+    width:280px;
+    height:150px;
+    text-align: center;
+    padding: 135px 0 135px 0;
+    font-size:1.6em ;
+   
+}
 
- 
+@mixin anime-proch{
+    border:solid $colortext 1px;
+    background: $colortext;
+    border-radius: 100%;
+    width:5px;
+    height:5px;
+    transfor: scale();
+    
+}
+$colortext:rgb(248, 194, 16);
+$coleurfoothead: rgb(36, 124, 80);
+$colorligne:rgba(214, 142, 7, 0.5);
+
+@mixin divheadermixin{
+    background: $coleurfoothead ;
+    padding: 1px 0 20px 0;
+    height: 80px;
+    width: 100%;
+    
+    
+}
+@mixin footermixin {
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+@mixin pieddepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    font-size: 1.5em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: $coleurfoothead;
+}
+
+@mixin titremenu($colorligne:rgba(214, 142, 7, 0.5)){
+    width:240px;
+    text-align: center;
+    text-decoration: none;
+    background:linear-gradient(to top, $colorligne
+    , $colorligne 4px, transparent 10%)
+      no-repeat left bottom;
+      background-size: 0% 100%;
+      transition:background-size 2s;
+      
+    
+      &:hover{
+          background-size: 100% 100%;
+        
+        }
+}
+@mixin barremenu3{
+    font-size: 1.4em;
+    color:rgb(48, 46, 46);
+    margin-top:20px;
+}
+
+@mixin paddingsection{ padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*mixin des tirets des titres des menus*/
+@mixin tiret($colortiret1, $colortiret2){
+    width:140px;
+    height:5px;
+    background-image: linear-gradient(to right, $colortiret1, $colortiret2 );
+    text-align:center;
+    margin-top: 35px;
+}
+
+
+/*animation des points de suspentions de prochainement
+sur la page d'accueuil*/
+@keyframes point-mixin{
+        
+    0%{
+        transform: scale(1);}
+    50%{transform: scale(0);}    
+    80%{transform: scale(1);}
+    100%{transform: scale(1);}
+}
+
+
+
+
