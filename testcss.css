@@ -1,0 +1,291 @@
+body{
+    backgrounD:black;
+    width:auto;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+  
+  }
+  /*
+.triangle{position:relative;}
+
+.triangle::before,
+.triangle::after{  
+  position:absolute;
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:solid 100px transparent;
+  border-right:solid 100px transparent;
+  border-bottom:solid 100px green;
+  border-left:solid 100px 
+    transparent;
+  border-radius:50%;
+  transform:rotate(-80deg);
+  margin:50px;
+ 
+}
+triangle::after{
+    position:absolute;
+    transform:rotate(90deg);
+   
+}
+@keyframes anime{
+    from{
+        transform:rotate(160deg);
+    }
+    
+  
+}
+.container{
+   
+    width:300px;
+    height:300px;
+    animation: anime 3S infinite alternate-reverse ;
+    perspective-origin: center;
+    
+}
+*/
+/*
+.container2{
+    perspective: 2000px;
+    transform: rotate3d(0,-2,2,92deg);
+    margin-top: 200px;
+}
+
+.test2{
+    position: absolute;
+    width:100px;
+    height:150px;
+    border:solid rgb(77, 74, 74);
+    transform:translateZ(-78px);
+    background-image:radial-gradient(rgb(218, 216, 216), rgb(77, 74, 74) );
+
+ }
+.test3{
+    position: absolute;
+    width:100px;
+    height:150px;
+    border:solid rgb(77, 74, 74);
+    transform:translateZ(78px);
+    background-image:radial-gradient(rgb(117, 63, 63),rgb(77, 74, 74) );
+}
+.test4{
+    position: absolute;
+    width:100px;
+    height:150px;
+    border:solid rgb(77, 74, 74);
+    background-image:radial-gradient(rgb(245, 11, 11), rgb(77, 74, 74) );
+    transform:rotateX(90deg) translateZ(-78px);
+    
+}
+
+@keyframes 3danime{}
+*/
+/*
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origi: top center;
+}
+
+.trou{
+    transform: rotate3d(1,0,0,70deg);
+    transform-style: preserve-3d;
+    width:190px;
+    height:160px;
+    border-radius: 100%;
+    background:black;
+    border:solid 45px rgb(236, 78, 5);
+    animatio: animé1 12222ms linear alternate-reverse  infinite;
+    
+}
+
+.cercle{
+    perspectiv: 1000px;
+    transform: rotate3d(1,0,0,65deg);
+    position: absolute;
+    width:260px;
+    height:260px;
+    border-radius:100%;
+    background-image:radial-gradient(rgb(143, 55, 55) rgb(179, 11, 11));
+    border:solid rgb(202, 84, 30) 40px;
+    z-index:1 ;
+    animatio: animé1 12222ms linear  infinite;
+}
+.cercle2{
+    perspective: 1000px;
+    transform: rotate3d(1,0,0,70deg);
+    position: absolute;
+    width:280px;
+    height:260px;
+    border-radius:100%;
+    background-image:radial-gradient(rgb(143, 55, 55) rgb(179, 11, 11));
+    border:solid rgb(179, 75, 28) 40px;
+    z-index: 1 ;
+    animation: animé1 12222ms linear reverse paused infinite;
+    perspective-origin: left;
+}
+@keyframes animé1{
+    20%{transform:rotate(0.4deg) rotate3d(1,0,0,65deg);}
+    70%{transform:rotate(0.7deg) rotate3d(1,0,0,65deg);}
+    100%{transform:rotate(300deg) rotate3d(1,0,0,65deg);}
+
+}   
+ 
+ .container3{
+     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective:200px;
+    transform:rotateX(115deg)  ;
+}
+
+.cercle{
+    transform-style: preserve-3d;
+    perspective-origin: center bottom;
+    perspective: 200px;
+    transfor:  rotate(10deg) ;
+    position: relative;
+    width:290px;
+    height:260px;
+    border-radius:100%;
+    background-image:radial-gradient(rgb(143, 55, 55) rgb(179, 11, 11));
+    border:solid rgb(202, 84, 30) 10px;
+    animation: anime2 4s infinite linear ;
+   }
+@keyframes anime2{
+    0%{
+        perspective: 200px;
+        transform: rotateZ(360deg) ;
+    }
+}
+
+
+   .trou{
+       
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    width:200px;
+    height:160px;
+    border-radius: 100%;
+    background:rgb(177, 25, 25);
+   
+    transform:rotateX(210deg) ; 
+    animation:  linear 5s infinite;
+}
+
+
+.container3{ display: flex;
+justify-content: center;
+align-items: center;
+perspective: 1000px;
+transform: rotateX(65deg) rotateY(-5deg) ;
+transform-style: preserve-3d;
+
+}
+
+
+.cercle-1{
+    position: absolute;
+    width:25px;
+    height:25px;
+    border-radius: 100%;
+    backgroun:rgb(51, 18, 3);
+    background-image: -moz-radial-gradient(rgb(83, 34, 11),rgb(51, 18, 3));
+    opacity: 0.7;
+   clip-path: polygon(25% 4%, 74% 4%, 100% 50%, 75% 96%, 25% 96%, 0% 50%);
+   z-index:1;
+   
+}
+
+.cercle{
+    position: absolute;
+    width:45px;
+    height:45px;
+    border-radius: 100%;
+    background:rgb(70, 49, 49);
+    
+    opacity: 0.5;
+   clip-path: polygon(25% 4%, 74% 4%, 100% 50%, 75% 96%, 25% 96%, 0% 50%);
+   z-index: 1;
+ }
+.cercle2{
+   position: absolute;;
+    width:70px;
+    height:70px;
+    border-radius: 100%;
+    background:rgb(70, 35, 6);
+    clip-path: polygon(25% 4%, 74% 4%, 100% 50%, 75% 96%, 25% 96%, 0% 50%);
+    opacity: 0.4;
+    z-index: ;
+}
+.cercle4{
+    position: absolute;
+   border-radius: 50%;
+    width:95px;
+    height:95px;
+    background-image: -moz-linear-gradient(rgb(114, 58, 5),
+    rgb(141, 80, 29));
+    
+    z-index: -1;
+ }
+ .cercle5{
+    position: absolute;
+   border-radius: 50%;
+    width:115px;
+    height:115px;
+    background-image: -moz-linear-gradient(rgb(114, 58, 5),
+    rgb(163, 92, 34));
+   
+    z-index:-2;
+ }
+ .cercle6{
+    position: absolute;
+   border-radius: 50%;
+    width:135px;
+    height:135px;
+    background-image: -moz-linear-gradient(rgb(128, 70, 16),
+    rgb(112, 64, 24));
+    
+    z-index:-3;
+ }
+ .cercle7{
+    position: absolute;
+   border-radius: 50%;
+    width:165px;
+    height:165px;
+    background-image: -moz-linear-gradient(rgb(100, 65, 31),
+    rgb(112, 64, 24));
+    borde:solid rgb(68, 0, 255) 2px;
+    z-index:-4;
+ }
+*/
+.container{ display: flex;
+justify-content: center;
+align-items: center;}
+
+.triangle{
+    position: absolute;
+  width:0;
+  height:0;
+  margin-left: 23px;
+  border-left:solid  35px white ;
+  border-top:solid 20px transparent;
+  border-right:solid  20px transparent ;
+  border-bottom:solid  20px transparent ;
+}
+.rouge{
+    
+    width: 90px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 20%;
+    background: red;
+    
+}

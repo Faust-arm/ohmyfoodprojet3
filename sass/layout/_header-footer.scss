@@ -5,7 +5,7 @@ body
 }
 
 /*footer de toute les pages*/
-section{height:820px;}
+main{height:1060px;}
 
 h1
 { 
@@ -176,7 +176,7 @@ page d'accueil*/
     
     width:500px;
     height:550px;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 
 
@@ -185,7 +185,7 @@ page d'accueil*/
     padding-top: 40px;
     margin-bottom: 35px;
     margin-top: 25px;
-    font-size: 2em;
+    font-size: 1.5em;
     background-image: linear-gradient(to right, orange, purple );
     color:transparent;
     -webkit-background-clip: text;
@@ -198,6 +198,7 @@ page d'accueil*/
     font-size: 0.9em;
     display: flex;
     flex-direction: row;
+    margin-top:10px;
 }
 
 .container-menu1{ 
@@ -211,7 +212,7 @@ flex-direction: column;
 align-items: center;
 width:auto;
 margin-bottom:130px;
-height:820px;
+height:1060px;
 
 
 }
@@ -243,24 +244,24 @@ height:820px;
 
 
   .div__entre{
-      font-size: 1.4em;
+      font-size: 1.1em;
       color:rgb(214, 142, 7);
-      margin-top:20px;
+     
      @include titremenu(rgb(214, 142, 7));
 }
 
 .titremenu1{
-  font-size: 1.4em;
+  font-size: 1.1em;
   color:rgb(48, 46, 46);
-  margin-top:20px;
+ 
   
   @include titremenu(rgb(48, 46, 46));
   
 }
 .titremenu4{
-  font-size: 1.4em;
+  font-size: 1.1em;
   color:rgb(8, 17, 4);
-  margin-top:20px;
+  
   
   @include titremenu(rgb(74, 214, 10));
   
@@ -285,17 +286,17 @@ height:820px;
 
 
 .div__plat{
-  font-size: 1.4em;
+  font-size: 1.1em;
   color:purple;
-  margin-top:20px;
+ 
   
   @include titremenu(purple);
 }
 
 .div__desert{
-  font-size: 1.4em;
+  font-size: 1.1em;
   color: rgb(107, 21, 245);
-  margin-top:20px;
+  
   @include titremenu(rgb(107, 21, 245));
 }
 
@@ -336,7 +337,7 @@ padding-right: 10px;
 .note2{
   background-image: linear-gradient(to right, red, orange);
   color:transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip:text;
   font-size: 3em;
   
 }
@@ -403,7 +404,8 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
+
 }
 .note-header{
   background-image: linear-gradient(to right, red, orange);
