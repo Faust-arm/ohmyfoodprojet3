@@ -9,8 +9,8 @@
 }
 @mixin menuscale{
     -webkit-transform:scale(1.4)  ;
-    transition: 1s; }
-
+    width: 290px;
+    transition: 0.7s; }
 
 
 
@@ -22,7 +22,7 @@
     border-radius: 100%;
     width:5px;
     height:5px;
-    transfor: scale();
+   
     
 }
 $colortext:rgb(248, 194, 16);
