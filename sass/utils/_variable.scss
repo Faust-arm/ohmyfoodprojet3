@@ -1,15 +1,15 @@
 @mixin menu-style(){
-    borde: 2px solid  rgb(209, 204, 204);
-    width:300px;
+    
+    width:360px;
     height:180px;
     text-align: center;
-    padding: 135px 0 135px 0;
+    padding: 195px 0 75px 0px;
     font-size:1.6em ;
    
 }
 @mixin menuscale{
     -webkit-transform:scale(1.4)  ;
-    width: 290px;
+    
     transition: 0.7s; }
 
 

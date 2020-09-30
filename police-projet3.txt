@@ -1,0 +1,8 @@
+ Montserrat : header et footer
+✅ Devonshire : 1er menu - nom
+❎ Itim  en italique : 1er menu - "menu"
+✅ Croissant-One : 2ème menu - nom
+❎ DM Serif Text : 2eme menu - "menu"
+✅ Dancing Script : 3eme menu - nom
+❎ Nanum Pen Script en italique : 3eme et 4eme menu - "menu"
+✅ Kaushan Script : 4ème menu - nom

@@ -5,21 +5,24 @@
         flex-direction: column;
         align-items: center;
     }
-    .pagemenu, .pagemenu2, .pagemenu3, .pagemenu4{
-        padding-right:25px;}
+    
     
 
-                            .menu__1accueil{
-                                width: 320px
+                            .menu__1accueil, .pagemenu{
+                                width: 320px;
+                                padding: 80px 0px 170px 0px;
                             }
-                            .menu__2accueil{
+                            .menu__2accueil,.pagemenu2{
                                     width: 320px;
+                                    padding: 80px 0px 170px 0px;
                                 }
-                                .menu__3accueil{
+                                .menu__3accueil, .pagemenu3{
                                     width: 320px;
+                                    padding: 80px 0px 170px 0px;
                                 }
-                                .menu__4accueil{
+                                .menu__4accueil, .pagemenu4{
                                     width: 320px;
+                                    padding: 80px 0px 170px 0px;
                                 }
                                 
                             }

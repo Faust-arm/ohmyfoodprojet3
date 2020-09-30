@@ -40,18 +40,21 @@ a{color:$colortext;}
 
 /*les menus de la page d'accueil*/
 
-.pagemenu{@include menu-style(); background: rgb(245, 205, 193);
+.pagemenu{ background: rgb(245, 205, 193);
   margin-bottom: 100px;
   margin-top: 30px;
   font-family: 'devonshire';
-  
+  width:360px;
+  height:180px;
+  text-align: center;
+  padding: 135px 0px 135px 0px;
+ 
+  font-size:1.6em ;
 }
 
 .pagemenu2{ @include menu-style;
   margin-bottoM: 30px;
-  background-image: linear-gradient(to right, rgb(104, 75, 233), rgb(118, 181, 221) );
-  color:transparent;
- -webkit-background-clip: text;
+ background: #f2f3f0;
   font-family: "Dancing Script";
   
 }
@@ -59,18 +62,15 @@ a{color:$colortext;}
   margin-bottom: 100px;
   margin-top: 30px;
   margin-left: 0px;
-  background-image: linear-gradient(to right, orange, purple );
-  color:transparent;
+ background: #f9fcf5;
  
- -webkit-background-clip: text;
+ 
   font-family: "croissant one";}
 
 .pagemenu4{ @include menu-style;
   margin-bottom: 30px;
   margin-left: 0px;
-  background-image: linear-gradient(to right, rgb(82, 175, 20), rgb(188, 231, 118) );
-  color:transparent;
-  -webkit-background-clip: text;
+  background: #f9fcf5;
   font-family: "kaushan script";}
 
 
@@ -99,13 +99,14 @@ a{color:$colortext;}
   
 }
 
-.divsection a{ color:rgb(211, 122, 6);}
 
 
 
-.menu1{font-family: "itim"; font-size:1.7em; color: black;}
-.menu2{font-size:1.7em; font-family:'Dm serif text' ;}
-.menu3, .menu4{font-size:2.3em; font-family: "nanum pen script" ;}
+
+.menu1{font-family: "itim"; font-size:1.5em; color: black;}
+.menu2{font-size:1.7em; font-family: "nanum pen script" ; color: #0e9fff;}
+.menu3{font-size:1.7em; font-family: "nanum pen script" ;}
+.menu4{font-size:1.7em; font-family: "nanum pen script" ;color: #96cc3e;}
 .big-div-box{
   width:100%;
   display: flex;
@@ -418,7 +419,42 @@ padding-bottom: 10px;
 
 .mentionlegalpage{padding: 30px 30px 30px 30px; margin-bottom: 100px;}
 
+.titreaccuel3{
+  width: 250px;
+  height: 50px;
+  background-image: linear-gradient(to right, orange, purple );
+  color:transparent;
+  -webkit-background-clip: text;
+  font-family: "croissant one";
+}
 
+
+.titreaccuel4{
+  width: 250px;
+  height: 50px;
+  background-image: linear-gradient(to right, rgb(82, 175, 20), rgb(188, 231, 118) );
+  color:transparent;
+  -webkit-background-clip: text;
+ 
+}
+
+.titreaccuel2{
+  width: 250px;
+  height: 50px;
+  background-image: linear-gradient(to right, rgb(104, 75, 233), rgb(118, 181, 221) );
+  color:transparent;
+  -webkit-background-clip: text;
+ 
+}
+
+.titreaccuel1{
+  width: 250px;
+  height: 50px;
+  background:black;
+  color:transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 30px;
+}
 
 
 
