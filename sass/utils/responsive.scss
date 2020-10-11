@@ -43,23 +43,8 @@
 
 
 
-@media all and (max-width: 390px){
-    .pieddepage{ 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-contacternous{
-        margin-bottom: 10px;
-    }
-
-    .contact, .mentionlegal{
-        margin-left: 0; margin-right: 0px;
-    }
-}
-@media all and (max-width: 600px){
-    body{ margin:0;}
+      @media all and (max-width: 600px){
+          body{ margin:0;}
 
     .text, .textplat2, .textentre2, .textdesert2{
         width:320px;
@@ -74,27 +59,90 @@
         height:auto;
         margin-bottom: 180px;
     }
-
+    
     .tiret3{
         width: 40px;
     }
     
     
-.divsection1{
-    width: 340px;
-    padding: 0;
-     height:1240px;
-     padding-left: 15px;
- }
-
- .divsection2,.divsection3,.divsection4{
-    width: 340px;
-    padding: 0;
-     height:1240px;
-     padding-right: 5px;
- }
-
+    .divsection1{
+        width: 340px;
+        padding: 0;
+        height:1240px;
+        padding-left: 15px;
+    }
+    
+    .divsection2,.divsection3,.divsection4{
+        width: 340px;
+        padding: 0;
+        height:1240px;
+        padding-right: 5px;
+    }
+    
        main{
-            padding-left:10px;
-            padding-right: 0px;}
+           padding-left:10px;
+           padding-right: 0px;}
 }
+
+
+@media all and (max-width: 390px){
+    .pieddepage{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-contacternous{
+        margin-bottom: 10px;
+    }
+
+    .contact, .mentionlegal{
+        margin-left: 0; margin-right: 0px;
+    }
+
+    .titremenu1{
+        width:140px;
+    }
+    .divsection1, .divsection2, .divsection3, .divsection4  {
+        height: 1450px;
+        width:240px;
+    }
+    .container-menu, .container-menu1{
+        width:240px;
+        height: 1450px;
+    }
+    main{
+        padding: 3px;
+    }
+
+    .text, .textplat2, .textentre2, .textdesert2{
+        width:240px;
+        
+    }
+    .textentre{margin-top: 30px;}
+
+}
+@media all and (max-width: 310px){  
+
+.menu__1accueil, .pagemenu{
+    width: 260px;
+      padding: 80px 0px 170px 0px;
+    }
+
+  .menu__2accueil,.pagemenu2{
+      width: 260px;
+     padding: 80px 0px 170px 0px;
+}
+
+.menu__3accueil, .pagemenu3{
+      width: 260px;
+       padding: 80px 0px 170px 0px;
+      }
+
+ .menu__4accueil, .pagemenu4{
+     width:260px;
+     padding: 80px 0px 170px 0px;
+     }
+.divprochainement{width: 130px;}
+
+ }
