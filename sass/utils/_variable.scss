@@ -69,7 +69,7 @@ $colorligne:rgba(214, 142, 7, 0.5);
     width:215px;
     text-align: center;
     text-decoration: none;
-    background:linear-gradient(to top, $colorligne
+    background:linear-gradient(to top, $colorligne,0%
     , $colorligne 4px, transparent 10%)
       no-repeat left bottom;
       background-size: 0% 100%;
@@ -88,7 +88,7 @@ $colorligne:rgba(214, 142, 7, 0.5);
 }
 
 @mixin paddingsection{ padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 
@@ -113,6 +113,12 @@ sur la page d'accueuil*/
     100%{transform: scale(1);}
 }
 
+@mixin ecart-titre {
+    
+        margin-right: 80px;
+  margin-left: 60px;
+    
+}
 
 
 

@@ -23,7 +23,7 @@ h1
 .divheader
 {   
     @include divheadermixin;
-    opacity: 0.8;
+    opacity: 0.9;
 } 
 
 
@@ -50,7 +50,7 @@ h1
  margin-right: 50px;
   font-size:1.6em ;
   box-shadow: 0 3px 12px rgba(0,0,0, .23);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .pagemenu2{ @include menu-style;
@@ -242,52 +242,98 @@ h1
   
   .tiret3menu3{@include tiret(rgb(0, 238, 255), rgb(0, 238, 255));}
   
-  .div__entre{
+  .p2souligne{
       font-size: 1.1em;
       color:rgb(214, 142, 7);
      width:235px;
      @include titremenu(rgb(214, 142, 7));
+
+     &__2{
+      font-size: 1.1em;
+      color:purple;
+      @include titremenu(purple);
+      margin-right: 25px;
+  margin-left: 40px;
+     }
+
+     &__3{
+      font-size: 1.1em;
+      color: rgb(107, 21, 245);
+      @include titremenu(rgb(107, 21, 245));
+      margin-right: 15px;
+      margin-left: 20px;
+      }
+    
+
 }
 
-.titremenu1{
+.p1souligne{
   font-size: 1.2em;
   color:rgb(48, 46, 46);
+  margin-right: 70px;
+  margin-left: 70px;
   @include titremenu(rgb(48, 46, 46));
+  
+  &__2{font-size: 1.2em;
+    color:rgb(48, 46, 46);
+     @include titremenu(rgb(48, 46, 46));
+     margin-right: 40px;
+    margin-left: 50px;}
+
+    &__3{font-size: 1.2em;
+      color:rgb(48, 46, 46);
+       @include titremenu(rgb(48, 46, 46));
+       margin-right: 25px;
+      margin-left: 30px;}  
+
  }
 
-.titremenu4{
+ .p4souligne{
   font-size: 1.2em;
   color:rgb(8, 17, 4);
   @include titremenu(rgb(74, 214, 10));
+  margin-right: 70px;
+  margin-left: 65px;
+
+  &__2{
+    font-size: 1.2em;
+    color:rgb(8, 17, 4);
+    @include titremenu(rgb(74, 214, 10));
+    margin-right: 35px;
+    margin-left: 30px;
+  }
+
+  &__3{
+    font-size: 1.2em;
+    color:rgb(8, 17, 4);
+    @include titremenu(rgb(74, 214, 10));
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+
 }
   
-.titre1menu3{
+.p3souligne{
   @include barremenu3;
-  
+  margin-right: 25px;
+  margin-left: 30px;
   @include titremenu(rgb(15, 39, 146));
 }
-.titre2menu3{
+.p3souligne__2{
   @include barremenu3;
-  
+  margin-right: 35px;
+  margin-left: 40px;
   @include titremenu(rgb(0, 110, 255));
 }
-.titre3menu3{
+.p3souligne__3{
   @include barremenu3;
-  
+  margin-right: 35px;
+  margin-left: 40px;
   @include titremenu(rgb(0, 238, 255));
 }
   
-.div__plat{
-  font-size: 1.1em;
-  color:purple;
-  @include titremenu(purple);
- }
 
-.div__desert{
-  font-size: 1.1em;
-  color: rgb(107, 21, 245);
-  @include titremenu(rgb(107, 21, 245));
-  }
+
 
 .text, .textplat2, .textentre2, .textdesert2{
    
@@ -370,7 +416,7 @@ padding-bottom: 10px;
   margin-top: 100px;
   width:600px;
   height: 980px;
-  padding-right: 5px;
+  
   padding-left: 30px;
 }
 
@@ -476,7 +522,7 @@ padding-bottom: 10px;
   }
   .pieddepage{
   @include pieddepage();
-  opacity: 0.9;
+  
 }
 
 .mentionlegal{

@@ -52,8 +52,33 @@
         margin-top: 60px;
         font-size: 1em;
     }
+
+    tirettitre{ display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
      
+    .p2souligne__2, .p2souligne__3 {margin-left: 0;}
+
+    .p1souligne{margin-right: 70px; }
+    
+    .p1souligne__2{margin-right: 40px; }
+    
+    .p1souligne__3 {margin-right: 30px; }
+
+    .p3souligne{margin-left: 0; margin-right:0 ;}
         
+    .p3souligne__2{margin-left: 0; margin-right:0 ;}
+
+    .p3souligne__3{margin-left: 0; margin-right:0 ;}
+
+    .p4souligne{margin-left: 0; margin-right:0 ;}
+        
+    .p4souligne__2{margin-left: 0; margin-right:0 ;}
+
+    .p4souligne__3{margin-left: 0; margin-right:0 ;}
+
+
+
     .container-menu1, .container-menu{
         width: 320px;
         height:auto;
@@ -91,6 +116,13 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .p1souligne{margin-right: 0px; margin-left: 40px; font-size: 1em; }
+    
+    .p1souligne__2{margin-right: 0px; margin-left: 20px; font-size: 1em }
+    
+    .p1souligne__3 {margin-right: 0px; margin-left: 10px; font-size: 1em }
+        
 
     .btn-contacternous{
         margin-bottom: 10px;
